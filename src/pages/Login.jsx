@@ -23,7 +23,7 @@ const Login = () => {
 
     try {
       const endpoint = isRegistering ? '/register' : '/login';
-      const res = await axios.post(`https://messenger-backend-y9he.onrender.com//api/auth${endpoint}`, {
+      const res = await axios.post(`https://messenger-backend-y9he.onrender.com/api/auth${endpoint}`, {
         username,
         password,
       });
